@@ -1,0 +1,480 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+.section-height > ul {
+  padding: 0;
+}
+
+header img {
+  width: 20%;
+  height: 80px;
+}
+
+main {
+  background: url(assets/people-2595657_1920.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 5rem;
+  min-width: 265px;
+  width: 25%;
+  font-family: Helvetica, sans-serif;
+  color: wheat;
+  text-align: center;
+  border: 3px solid wheat;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  padding-top: .5%;
+  align-self: end;
+}
+
+main h2 {
+  width: 90%;
+  border: 2px solid wheat;
+  border-radius: 10px;
+  margin: 3% auto;
+  background: wheat;
+  color: #492d2c;
+}
+
+section h3 + ul > li > img,
+ section h2 + ul > li > img {
+  width: 80%;
+  height: 120px;
+}
+
+main + section > section > img {
+  padding-top: 3%;
+}
+
+main p {
+  font-size: 2rem;
+  width: 90%;
+  margin: 1% auto 0 auto
+}
+
+strong {
+  font-size: 3rem;
+  padding-left: 2%;
+  padding-right: 4%;
+}
+
+h1:hover {
+  background: wheat;
+  color: #492d2c;
+}
+
+a {
+  text-decoration: none;
+  color: #492d2c;
+  width: 150%;
+  text-align: center;
+}
+
+a:hover {
+  color: wheat;
+  background: #492d2c;
+  border-radius: 5px;
+  width: 150%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-head {
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  font-size: 4rem;
+  color: #492d2c;
+  margin: 0;
+}
+
+.top-cuts {
+  height: 200px;
+  width: 50%;
+  border-radius: 20%;
+  border: 3px solid #492d2c;
+}
+
+.behind-the-cut {
+  height: 200px;
+  width: 70%;
+  border-radius: 20%;
+  border: 3px solid #492d2c;
+}
+
+.behind {
+  flex-wrap: wrap;
+}
+
+.behind li {
+  flex-basis: 21%;
+  margin-top: 1%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 80%;
+  padding: 1% 5%;
+}
+
+header ul {
+  padding-left: 0;
+  width: 70%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  border: 3px solid #492d2c;
+  border-radius: 5px;
+}
+
+li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #492d2c;
+}
+
+main > section {
+  margin: 3% 3% 3% 3%;
+  width: 20%;
+  min-width: 160px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid wheat;
+  border-radius: 10px;
+  height: 30%;
+  color: wheat;
+}
+
+body > section {
+  height: 300px;
+  width: 100%;
+  background: rgb(243, 229, 203);
+}
+
+main + section {
+  font-size: 2rem;
+  text-align: center;
+  background: rgb(243, 229, 203);
+  /* padding: 0 10%; */
+  display: flex;
+  justify-content: center;
+}
+
+main + section > section {
+  margin: 2%;
+  width: 24%;
+}
+
+main + section > section:hover {
+  background: #492d2c;
+  border-radius: 5px;
+  color: wheat;
+}
+
+.menu-services {
+  justify-content: space-between;
+}
+
+.menu-services ul {
+  height: 80%;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0;
+}
+
+.menu-services li {
+  height: 60px;
+  min-width: 175px;
+  justify-content: space-between;
+  background: orange;
+  border-bottom: 1px dashed #492d2c;
+  padding-left: 1%;
+}
+
+.section-height {
+  height: 925px;
+}
+
+.section-height h2,
+.section-height h3 {
+  height: 80px;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+
+.add-height {
+  height: 110px;
+}
+
+ul.behind {
+  height: 500px;
+}
+
+.barbers-section {
+  height: 350px;
+}
+
+.behind li:nth-of-type(odd) {
+  align-self: flex-start;
+}
+
+.behind li:nth-of-type(even) {
+  align-self: flex-end;
+}
+
+.barbers {
+  background: #492d2c;
+  border-radius: 5px;
+  color: wheat;
+  margin: 0;
+  margin-top: -30px;
+  width: 43%;
+  text-align: center;
+}
+
+footer {
+  background: #492d2c;
+  height: 100px;
+}
+
+footer section {
+  flex-basis: 33.3%;
+}
+
+footer nav {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+footer img {
+  width: 50%;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+footer a{
+color: wheat;
+}
+
+footer section:nth-of-type(2) img,
+footer section:nth-of-type(2) small {
+  margin: auto;
+}
+
+footer section:nth-of-type(2) img {
+  height: 80%;
+}
+
+footer section:nth-of-type(2) small{
+  height: 20%;
+  font-size: 1.5rem;
+  margin-bottom: .5%;
+  color: wheat;
+}
+
+@media all and (max-width: 767px){
+  header nav {
+    width: 60%;
+    padding: 0;
+  }
+  header img {
+    width: 40%;
+  }
+  .top-cuts, .behind-the-cut {
+    width: 100%;
+  }
+  header ul {
+    width: 100%;
+  }
+
+  main {
+    height: 300px;
+  }
+
+  main + section {
+  justify-content: space-between;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  main + section > section {
+    width: 33%;
+    font-size: 1.7rem;
+  }
+
+  main > section {
+    font-size: 1rem;
+    height: 32%;
+  }
+
+  main h2 {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    min-width: 0;
+  }
+
+  .barbers {
+    width: 90%;
+  }
+
+}
+
+@media all and (max-width: 650px){
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 530px){
+  h1 {
+    font-size: 2rem;
+  }
+  main + section {
+    height: 60%;
+  }
+  main + section > section {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+  .menu-services ul {
+    padding: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .menu-services li {
+    width: 90%;
+    min-width: 0;
+  }
+  .section-height {
+    height: 1010px;
+  }
+  .behind li {
+    flex-basis: 30%;
+  }
+  .barbers-section ul {
+    padding: 0;
+  }
+  .barbers-section li {
+    width: 30%;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  footer li {
+    flex-basis: 30%;
+  }
+  footer nav li {
+    flex-basis: 50%;
+  }
+  footer img {
+    width: 100%;
+  }
+  footer small{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media all and (max-width: 450px){
+  header li {
+    font-size: 1.5rem;
+  }
+  strong {
+    font-size: 2rem;
+  }
+  main > section {
+    min-width: 0;
+    width: 30%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    width: 30%;
+    background: wheat;
+    color: #492d2c;
+  }
+  main + section > section {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media all and ( max-width: 360px ){
+  main h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+/* Fonts */
+html {
+  font-size: 62.5%;
+}
